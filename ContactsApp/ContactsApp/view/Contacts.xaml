@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactsApp.view.Contacts"
+             BackgroundColor="White"
+             >
+    <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="LightSkyBlue" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <CollectionView ItemsSource="{Binding Data}"
+                            SelectionChanged="CollectionView_SelectionChanged"
+                            SelectionMode="Single"
+                            ItemsUpdatingScrollMode="KeepLastItemInView"
+                            >
+
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate>
+                        <Grid Padding="15">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Frame CornerRadius="25" 
+                                   Grid.RowSpan="2"
+                   HeightRequest="50"
+                   WidthRequest="50"
+                   HorizontalOptions="Center"
+                   Padding="0"
+                   IsClippedToBounds="True">
+                                <Image 
+                       Source="{Binding Picture.Medium}"
+                       Aspect="AspectFill"
+                       HeightRequest="60"
+                       WidthRequest="60" 
+                       VerticalOptions="Center"/>
+
+                            </Frame>
+                            <Label Grid.Column="1"
+                                   TextColor="Black"
+                       Text="{Binding Name.First}"
+                       FontAttributes="Bold"/>
+                            <Label Grid.Row="1"
+                       Grid.Column="1"
+                       Text="{Binding Phone}"
+                       TextColor="Black"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

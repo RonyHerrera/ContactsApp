@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactsApp.view.About"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Padding="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="130"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="*" />
+
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Margin="12" VerticalOptions="Center" Spacing="-5" Grid.Column="1">
+                        <Label Text="Rony Rafael"
+                   FontSize="Large" 
+                   FontAttributes="Bold"  
+                   TextColor="Black"
+                   HorizontalOptions="Start"
+                   />
+
+                        <Label Text="De Mota Herrera"
+                   FontSize="Large" 
+                   FontAttributes="Bold"  
+                   TextColor="Black"
+                   HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Frame CornerRadius="200" 
+                   HeightRequest="125"
+                   WidthRequest="130"
+                   HorizontalOptions="Center"
+                   Padding="0"
+                   IsClippedToBounds="True">
+                        <Image Source="photo.jpg"
+                               WidthRequest="300"
+                               HeightRequest="300"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                       Aspect="AspectFill"
+                       Grid.Column="0"/>
+                    </Frame>
+                </Grid>
+                <Label Text="Quien soy"
+                   TextColor="Black" 
+                   FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                   FontSize="Medium"/>
+                <Label Text="Soy técnico profesional de informática y estudiante del Instituto Tecnológico de las Américas (ITLA) en Tecnólogo en Desarrollo de Software. He ido obteniendo amplios conocimientos del área y me siento preparado para demostrar mis habilidades.                     "
+                   TextColor="Black" Margin="20"/>
+                <Frame HasShadow="True" CornerRadius="10">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <Image Source="college.png" WidthRequest="22"/>
+
+                            <Label Text="Estudios"
+                   TextColor="Black" 
+                   FontAttributes="Bold"
+                   FontSize="Medium"/>
+                        </StackLayout>
+                        <BoxView Color="Black" HeightRequest="0.3"/>
+                        <Label Text="Bachiller(2016-2017)"                       
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Colegio Evangelico La Trinidad"                      
+                   TextColor="Black" />
+                        <Label Text="Técnico en Informática (2017-2020)"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Técnico César Nicolás Penson"
+                   TextColor="Black" />
+                        <Label Text="Tecnólogo en Desarrollo de Software[2020-Actualidad]"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Instituto Técnologico De Las Americas(ITLA)"                       
+                   TextColor="Black" />
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <Image Source="college.png" WidthRequest="22"/>
+
+                            <Label Text="Estudios complementarios"
+                   TextColor="Black" 
+                   FontAttributes="Bold"
+                   FontSize="Medium"/>
+                        </StackLayout>
+                        <BoxView Color="Black" HeightRequest="0.3"/>
+                        <Label Text="Introducción a la Programación"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Centro Tecnológico Comunitario "
+                   TextColor="Black" />
+                        <Label Text="Creación de Páginas Web"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Centro Tecnológico Comunitario "
+                   TextColor="Black" />
+                        <Label Text="Java Fundamentals"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Centro Tecnológico Comunitario "
+                   TextColor="Black" />
+                        <Label Text="Photoshop"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Centro Tecnológico Comunitario "
+                   TextColor="Black" />
+                        <Label Text="Illustrator"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Centro Tecnológico Comunitario "
+                   TextColor="Black" />
+                        <Label Text="Creación de Videojuegos"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Centro Tecnológico Comunitario "
+                   TextColor="Black" />
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <Image Source="languaje.png" WidthRequest="22"/>
+
+                            <Label Text="Idiomas"
+                   TextColor="Black" 
+                   FontAttributes="Bold"
+                   FontSize="Medium"/>
+                        </StackLayout>
+                        <BoxView Color="Black" HeightRequest="0.3"/>
+                        <Label Text="Español"                       
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="(Materna)"                      
+                   TextColor="Black" />
+                        <Label Text="Inglés"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="(Medio- Nivel 11 Dominico Americano)"
+                   TextColor="Black" />
+
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <Image Source="phone.png" WidthRequest="22"/>
+
+                            <Label Text="Contacto"
+                   TextColor="Black" 
+                   FontAttributes="Bold"
+                   FontSize="Medium"/>
+                        </StackLayout>
+                        <BoxView Color="Black" HeightRequest="0.3"/>
+                        <Label Text="Telefono"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="829-742-0134"
+                   TextColor="Black" />
+                        <Label Text="Correro"
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="ronydm2003@gmail.com"                       
+                   TextColor="Black" />
+                        <Label Text="Direccion"                       
+                   TextColor="Black" 
+                   FontAttributes="Bold"/>
+                        <Label Text="Santo Domingo"                      
+                   TextColor="Black" />
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
