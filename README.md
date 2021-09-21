@@ -1,2 +1,2 @@
 # ContactsApp
-Esteproyecto es una app para mostrar una lista de contactos consumiento la ai de random users con xamarin forms.
+Esteproyecto es una app para mostrar una lista de contactos consumiento la api de random users con xamarin forms.
